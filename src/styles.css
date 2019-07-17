@@ -44,10 +44,14 @@ footer{
 
 ul.list-item {
   list-style-image: url("assets/_img/star.png");
+  display: flex;
+
+  flex-wrap: wrap;
+  align-content: space-around;
+
 }
 ul.list-item li{
-  float: left;
+
   font-size: 30px;
-  margin-left: 20px;
-  width: 270px;
+  width: 300px;
 }
