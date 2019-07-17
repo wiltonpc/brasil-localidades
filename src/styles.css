@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+main{
+  background-color: #F4ECE1;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 60px;
+  overflow: auto;
+}
+footer{
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 0px 10px;
+  height: 60px;
+  background-color: #313131;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-title {
+  padding: 10px;
+  font-size: 60px;
+  text-align: center;
+  color: #D46768;
+}
+
+.box-list{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: auto 40px;
+}
+
+ul.list-item {
+  list-style-image: url("assets/_img/star.png");
+}
+ul.list-item li{
+  float: left;
+  font-size: 30px;
+  margin-left: 20px;
+  width: 270px;
+}
