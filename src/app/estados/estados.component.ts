@@ -1,3 +1,4 @@
+import { EstadosService } from './../estados.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EstadosComponent implements OnInit {
 
-  constructor() { }
+  estados: Array<any>;
+  constructor(private estadosService: EstadosService) { }
 
   ngOnInit() {
+    this.listar();
   }
 
+  listar() {
+    this.estadosService.listar().subscribe(dados => this.estados = dados);
+  }
 }
